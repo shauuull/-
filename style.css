@@ -16,12 +16,12 @@ body {
   cursor: pointer;
   animation: up 3s linear infinite;
 }
-
+/* Style the envelope and the card */
 /* Style the envelope and the card */
 .envelope {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 390px; /* Aumentado en un 30% */
+  height: 260px; /* Aumentado en un 30% */
   background-color: #f08080;
 }
 
@@ -29,21 +29,21 @@ body {
   background-color: #f08080;
   content: "";
   position: absolute;
-  width: 212px;
-  height: 212px;
+  width: 275.6px; /* Aumentado en un 30% */
+  height: 275.6px; /* Aumentado en un 30% */
   transform: rotate(45deg);
-  top: -105px;
-  left: 44px;
+  top: -136.5px; /* Ajustado para mantener la posición relativa */
+  left: 57.2px; /* Ajustado para mantener la posición relativa */
   border-radius: 30px 0 0 0;
 }
 
 .card {
   position: absolute;
   background-color: #eae2b7;
-  width: 270px;
-  height: 170px;
-  top: 5px;
-  left: 15px;
+  width: 351px; /* Aumentado en un 30% */
+  height: 221px; /* Aumentado en un 30% */
+  top: -40px; /* Ajustado para que el card suba el doble */
+  left: 19.5px; /* Ajustado para mantener la posición relativa */
   box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
 }
 
@@ -52,19 +52,19 @@ body {
   position: absolute;
   border: 3px solid #003049;
   border-style: dotted;
-  width: 240px;
-  height: 140px;
-  left: 12px;
-  top: 12px;
+  width: 312px; /* Aumentado en un 30% */
+  height: 182px; /* Aumentado en un 30% */
+  left: 15.6px; /* Ajustado para mantener la posición relativa */
+  top: 15.6px; /* Ajustado para mantener la posición relativa */
 }
 
 .text {
   position: absolute;
   font-family:  'Brush Script MT', cursive;
-  font-size: 28px;
+  font-size: 23px;
   text-align: center;
-  line-height: 25px;
-  top: 19px;
+  line-height: 26px;
+  top: 18px;
   left: 85px;
   color: #003049;
 }
@@ -74,9 +74,9 @@ body {
   display: inline-block;
   height: 30px;
   margin: 0 10px;
-  position: relative;
-  top: 110px;
-  left: 105px;
+  position: absolute;
+  top: 34px; /* Ajusta la posición vertical del corazón */
+  left: 34px; /* Ajusta la posición horizontal del corazón */
   transform: rotate(-45deg);
   width: 30px;
 }
@@ -100,13 +100,15 @@ body {
   left: 15px;
   top: 0;
 }
+
+
 .front {
   position: absolute;
-  border-right: 180px solid #f4978e;
-  border-top: 95px solid transparent;
-  border-bottom: 100px solid transparent;
-  left: 120px;
-  top: 5px;
+  border-right: 234px solid #f4978e; /* Aumentado en un 30% */
+  border-top: 123.5px solid transparent; /* Aumentado en un 30% */
+  border-bottom: 130px solid transparent; /* Aumentado en un 30% */
+  left: 156px; /* Ajustado para mantener la posición relativa */
+  top: 6.5px; /* Ajustado para mantener la posición relativa */
   width: 0;
   height: 0;
   z-index: 10;
@@ -115,10 +117,10 @@ body {
 .front:before {
   position: absolute;
   content: "";
-  border-left: 300px solid #f8ad9d;
-  border-top: 195px solid transparent;
-  left: -120px;
-  top: -95px;
+  border-left: 390px solid #f8ad9d; /* Aumentado en un 30% */
+  border-top: 253.5px solid transparent; /* Aumentado en un 30% */
+  left: -156px; /* Ajustado para mantener la posición relativa */
+  top: -123.5px; /* Ajustado para mantener la posición relativa */
   width: 0;
   height: 0;
 }
@@ -131,17 +133,6 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-30px);
-  }
-}
-
-/* to scale the shadow */
-@keyframes scale {
-  0%,
-  100% {
-    transform: scaleX(1);
-  }
-  50% {
-    transform: scaleX(0.85);
+    transform: translateY(-30px); /* Aumentado para que el envelope suba el doble */
   }
 }
