@@ -8,10 +8,25 @@
     <title>Valentines day card | @helpme_coder</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+    <style>
+        /* Estilo para el nuevo botón */
+        .click-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #f08080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
-<body>
+<body onclick="Playaudi()">
+     <button class="click-button">Primero Clickea Aqui Owo</button>
     <div class="container">
         <div class="valentines">
             <div class="envelope"></div>
@@ -25,6 +40,13 @@
     <div class="shadow"></div>
     </div>
     <script src="script.js"></script>
+        <audio id="musica1" autoplay >
+        <source src="audio/index.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <script> function Playaudi(){
+        document.getElementById("musica1").play();
+    } </script>
 </body>
 
 </html>
